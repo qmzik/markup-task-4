@@ -1,0 +1,69 @@
+img
+{
+    width: 100%;
+    height: 150px;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.dislay-check
+{
+    visibility: visible;
+}
+
+.dislay-check .cats
+{
+    display: block;
+}
+
+.cats
+{
+    padding: 10px;
+}
+
+.cat
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 350px;
+    box-shadow: 0 4px 29px 0 rgba(0,0,0,.4);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.cat-discription
+{
+    padding: 10px;
+}
+
+.cat-name
+{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.cat-discription span
+{
+    color: grey;
+}
+
+.cat-status
+{
+    display: block;
+    margin-top: 15px;
+}
+
+.cat-discription span:hover
+{
+    font-style: oblique;
+}
+
+.cat-photo:hover
+{
+    transform: scale(1.15, 1.15);
+}
