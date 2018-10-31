@@ -2,6 +2,8 @@ img
 {
     width: 100%;
     height: 150px;
+    background-size: cover;
+    background-position: center;
 }
 
 figure
@@ -11,12 +13,34 @@ figure
 
 .dislay-check
 {
-    visibility: visible;
+    display: none;
 }
 
-.dislay-check .cats
+.dislay-check:checked ~ .display .fa
+{
+    transform: rotate(90deg);
+}
+
+.dislay-check:checked ~ .cats .cat
 {
     display: block;
+    width: 300px;
+}
+
+.dislay-check:checked ~ .cats .cat .shortinfo
+{
+    display: none;
+}
+
+.dislay-check:checked ~ .cats .cat .longinfo
+{
+    display: block;
+    color: grey;
+}
+
+.dislay-check ~ .cats .cat .longinfo
+{
+    display: none;
 }
 
 .cats
