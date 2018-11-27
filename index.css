@@ -24,7 +24,13 @@ figure
 .dislay-check:checked ~ .cats .cat
 {
     display: block;
-    width: 300px;
+    width: 600px;
+    height: 700px;
+}
+
+.dislay-check:checked ~ .cats .cat
+{
+    margin: auto;
 }
 
 .dislay-check:checked ~ .cats .cat .shortinfo
@@ -36,6 +42,11 @@ figure
 {
     display: block;
     color: grey;
+}
+
+.dislay-check:checked ~ .cats .cat .cat-photo
+{
+    height: 400px;
 }
 
 .dislay-check ~ .cats .cat .longinfo
@@ -91,3 +102,25 @@ figure
 {
     transform: scale(1.15, 1.15);
 }
+
+.cat-name:hover
+{
+    color: aqua;
+}
+
+.cat:hover
+{
+    border: 1px solid aqua;
+}
+
+.display
+{
+    cursor: pointer;
+}
+
+.display:hover
+{
+    color: chocolate;
+    transition: .5s;
+}
+
