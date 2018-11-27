@@ -31,6 +31,7 @@ figure
 .dislay-check:checked ~ .cats .cat
 {
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .dislay-check:checked ~ .cats .cat .shortinfo
@@ -68,6 +69,7 @@ figure
     box-shadow: 0 4px 29px 0 rgba(0,0,0,.4);
     margin: 10px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .cat-discription
@@ -113,12 +115,12 @@ figure
     border: 1px solid aqua;
 }
 
-.display
+.display .fa
 {
     cursor: pointer;
 }
 
-.display:hover
+.display .fa:hover
 {
     color: chocolate;
     transition: .5s;
